@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat';
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    padding: 20px;
+        h4{
+            font-size: 45px;
+        }
+    input{
+        padding: 5px 20px;
+        border-radius: .5rem;
+        font-size: 18px;
+        &:nth-child(2){
+            background-color: #35478C;
+            color: #fff;
+        }
+        &:nth-child(2):hover{
+            background-color: #fff;
+            color: #35478C;
+            transition: .3s;
+        }
+    }
+}
+
+.type-of-food{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 30px;
+        button{
+            padding: 10px 30px;
+            border-radius: .5rem;
+            background-color: #509E2F;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            &:hover{
+                background-color: #84BD00;
+                box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+                transition: .3s;
+            }
+        }
+}
+
+.root{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    flex: 0 0 30%;
+    padding-bottom: 30px;
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border-radius: .5rem;
+    justify-content: space-around;
+    width: 30%;
+    min-height: 70vh;
+    img{
+        width: 100%;
+    }
+    
+    p{
+        color: #84BD00;
+        font-size: 18px;
+            &:nth-child(2){
+                color: #6CC5C6;
+            }
+                span{
+                    color: #aba8a8;
+                }
+    }   
+}
+
+.recept{
+    background-color: #F23D4C;
+    color: #fff;
+    padding: 10px;
+    border-radius: .5rem;
+    text-decoration: none;
+    &:hover{
+        background-color: #c01f2d;
+        transition: .3s;
+    }
+}
